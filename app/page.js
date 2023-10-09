@@ -18,7 +18,7 @@ const Home = () => {
         <div className="semi-container">
           {BlogHeader.map((item) => {
             return (
-              <Link href={`/details/${item.BlogId}`}>
+              <Link key={item.BlogId} href={`/details/${item.BlogId}`}>
                 <div className="box-container" key={item.BlogId}>
 
                   <span className="select-box">{item.BlogTitle[2]}</span> နှင့်ပတ်သက်သော အိပ်မက်များ

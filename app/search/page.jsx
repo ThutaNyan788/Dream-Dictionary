@@ -19,7 +19,7 @@ const SearchPage = () => {
         }else{
             setBlogs(BlogDetail);
         }
-    },[searchValue]);
+    },[searchValue,blogs]);
 
     return (
         <div className="container">
